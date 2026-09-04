@@ -81,9 +81,9 @@ function FieldSelect({ value, onValueChange, children, label }: { value: string;
   );
 }
 
-export default function TaxCalcApp({ initialCountry = 'IE' }: { initialCountry?: CountryCode }) {
+export default function TaxCalcApp({ initialCountry = 'IE', initialMode = 'gross' }: { initialCountry?: CountryCode; initialMode?: Mode }) {
   const [country, setCountry] = useState<CountryCode>(initialCountry);
-  const [mode, setMode] = useState<Mode>('gross');
+  const [mode, setMode] = useState<Mode>(initialMode);
   const [inputPeriod, setInputPeriod] = useState<InputPeriod>('annual');
   const [resultPeriod, setResultPeriod] = useState<ResultPeriod>('annual');
   const [value, setValue] = useState(countryMeta[initialCountry].defaultSalary);

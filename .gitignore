@@ -19,6 +19,8 @@
 # misc
 .DS_Store
 *.tsbuildinfo
+.vercel
+dist-vercel
 *.pem
 
 # debug

@@ -1,0 +1,5 @@
+import type { Metadata } from 'next';
+import InfoPage, { Checklist } from '@/components/InfoPage';
+
+export const metadata: Metadata = { title: 'Privacy' };
+export default function PrivacyPage() { return <InfoPage eyebrow="Privacy by design" title="Your salary is nobody else’s business." intro="TaxCalc is intentionally account-free and database-free. The core calculator runs entirely in your browser."><h2>What TaxCalc does not collect</h2><Checklist items={['Salary or desired net pay', 'Tax code, marital status or partner income', 'Pension, student-loan or deduction details', 'Payslips or financial documents']} /><h2>Harmless preferences</h2><p>TaxCalc may remember non-sensitive interface preferences such as your country or annual/monthly display on your device. Financial inputs are not automatically saved.</p><h2>Exports and sharing</h2><p>Copied summaries and downloaded files are created locally. TaxCalc does not put salary values into public URLs. Only share an exported result with people you trust.</p></InfoPage>; }

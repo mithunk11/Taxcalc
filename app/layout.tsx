@@ -13,7 +13,7 @@ const geistMono = Geist_Mono({
 });
 
 export const metadata: Metadata = {
-  metadataBase: new URL('https://taxcalc-mjapps.jomol-indium.chatgpt.site'),
+  metadataBase: new URL('https://taxcalc.mjapps.net'),
   title: {
     default: 'TaxCalc — Know what lands in your bank',
     template: '%s · TaxCalc',

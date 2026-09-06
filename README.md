@@ -1,6 +1,7 @@
 <p align="center"><img src="public/brand/taxcalc-wordmark.png" width="230" alt="TaxCalc logo"></p>
 <h1 align="center">TaxCalc</h1>
 <p align="center"><strong>Know what actually lands in your bank.</strong></p>
+<p align="center"><a href="https://taxcalc.mjapps.net">Open TaxCalc</a></p>
 
 TaxCalc is a private, transparent salary calculator for Ireland, the United Kingdom, and India. It supports both gross-to-net and net-to-gross calculations, explains the deductions applied, and exposes the tax year and official sources behind every enabled country engine.
 

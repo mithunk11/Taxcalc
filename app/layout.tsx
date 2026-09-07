@@ -13,7 +13,9 @@ const geistMono = Geist_Mono({
 });
 
 export const metadata: Metadata = {
-  metadataBase: new URL('https://taxcalc.mjapps.net'),
+  metadataBase: new URL('https://taxcalc.techvora.net'),
+  authors: [{ name: 'Techvora', url: 'https://techvora.net' }],
+  alternates: { canonical: '/' },
   title: {
     default: 'TaxCalc — Know what lands in your bank',
     template: '%s · TaxCalc',
@@ -24,6 +26,7 @@ export const metadata: Metadata = {
     title: 'TaxCalc — Know what lands in your bank',
     description: 'Private gross-to-net and net-to-gross salary calculations for Ireland, the UK and India.',
     type: 'website',
+    url: 'https://taxcalc.techvora.net',
     images: [{ url: '/og.png', width: 1731, height: 909, alt: 'TaxCalc — Know what actually lands in your bank.' }],
   },
   twitter: {

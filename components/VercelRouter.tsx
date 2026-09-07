@@ -15,7 +15,7 @@ function Sources() {
 }
 
 function About() {
-  return <InfoPage eyebrow="An MJ Apps tool" title="A clearer way to understand your pay." intro="TaxCalc answers two ordinary but surprisingly difficult questions: what will land in my bank, and what salary do I need to ask for?"><h2>Built for understanding</h2><p>Every deduction has an explanation, every assumption is visible, and progressive rates are shown as slices.</p><h2>Accuracy before country count</h2><p>Ireland, the United Kingdom and India each use an independent engine.</p></InfoPage>;
+  return <InfoPage eyebrow="A Techvora product" title="A clearer way to understand your pay." intro="TaxCalc answers two ordinary but surprisingly difficult questions: what will land in my bank, and what salary do I need to ask for?"><h2>Built for understanding</h2><p>Every deduction has an explanation, every assumption is visible, and progressive rates are shown as slices.</p><h2>Accuracy before country count</h2><p>Ireland, the United Kingdom and India each use an independent engine.</p></InfoPage>;
 }
 
 export default function VercelRouter() {

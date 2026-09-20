@@ -139,3 +139,23 @@ footer { position:relative; z-index:2; padding:40px max(24px,calc((100vw - 1120p
 .info-cta { width:min(920px,calc(100% - 38px)); margin:0 auto 65px; display:grid; grid-template-columns:55px 1fr auto; gap:16px; align-items:center; padding:25px 28px; border-radius:22px; background:linear-gradient(145deg,#113650,#061d34); color:#fff; box-shadow:0 25px 70px rgba(6,30,49,.2); }.info-cta > svg { width:45px; height:45px; padding:12px; border-radius:14px; color:#75e5c4; background:rgba(255,255,255,.1); }.info-cta b,.info-cta span { display:block; }.info-cta b { font-size:16px; }.info-cta span { color:#adbfca; margin-top:3px; font-size:10px; }.info-cta > a { padding:11px 15px; border-radius:11px; background:#44d7ae; color:#06253b; font-size:10px; font-weight:780; }
 .info-footer { display:flex; justify-content:space-between; align-items:center; padding:28px max(24px,calc((100vw - 920px)/2)); border-top:1px solid var(--line); color:var(--muted); font-size:9px; }.info-footer nav { display:flex; gap:16px; }
 @media (max-width:620px) { .info-header { padding-inline:16px; }.info-header > a:last-child { font-size:0; }.info-header > a:last-child svg { width:19px; }.info-article { margin:50px auto; }.info-article h1 { font-size:46px; }.info-checklist { grid-template-columns:1fr; }.info-cta { grid-template-columns:45px 1fr; padding:20px; }.info-cta > a { grid-column:1/-1; text-align:center; }.info-footer { display:grid; gap:12px; }.info-footer nav { grid-row:1; } }
+
+/* ===========================================================================
+   Touch feel
+   ---------------------------------------------------------------------------
+   Nothing visual changes here. `touch-action: manipulation` drops the 300ms a
+   browser otherwise waits on every tap to find out whether a double tap was a
+   zoom — the single biggest reason a good web tool feels slower than an app.
+   The pressed state exists because a phone has no cursor to hover: without it
+   a tap looks like nothing happened until the result arrives. It is
+   pointer-coarse only, so a mouse sees exactly what it saw before.
+   ========================================================================= */
+button, [role="button"], summary { -webkit-tap-highlight-color: transparent; touch-action: manipulation; }
+
+@media (hover: none) {
+  button:active, [role="button"]:active { transform: scale(.98); }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  button:active, [role="button"]:active { transform: none; }
+}

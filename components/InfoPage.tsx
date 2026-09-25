@@ -6,7 +6,7 @@ export default function InfoPage({ eyebrow, title, intro, children }: { eyebrow:
       <header className="info-header"><a className="brand" href="/"><img src="/brand/taxcalc-logo.png" alt="" /><span>Tax<span>Calc</span></span></a><a href="/"><ArrowLeft /> Back to calculator</a></header>
       <article className="info-article"><div className="eyebrow"><BadgeCheck /> {eyebrow}</div><h1>{title}</h1><p className="info-intro">{intro}</p>{children}</article>
       <section className="info-cta"><LockKeyhole /><div><b>Ready to understand your pay?</b><span>Your calculation stays in this browser.</span></div><a href="/">Open TaxCalc</a></section>
-      <footer className="info-footer"><span>© 2026 TaxCalc · A Techvora product</span><nav><a href="/privacy">Privacy</a><a href="/methodology">Methodology</a><a href="/tax-sources">Sources</a></nav></footer>
+      <footer className="info-footer"><span>© 2026 TaxCalc · An EmKeTech product</span><nav><a href="/privacy">Privacy</a><a href="/methodology">Methodology</a><a href="/tax-sources">Sources</a></nav></footer>
     </main>
   );
 }
